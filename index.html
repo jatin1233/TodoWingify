@@ -1,0 +1,43 @@
+<!-- Web App - To Do List
+Steps :
+Create a ToDo app which lists a laundry list of tasks
+Host the page on GitHub & share URL
+Share the GitHub repo link with us
+The UI consists of :
+Header with Title - "To Do App" which also shows count of items added
+An input box with submit button to add an item to the list
+A list of to do items in seperate rows
+Each row should have a checkbox to mark the item complete
+Each incomplete item row can be edited & deleted
+Each completed item can only be deleted (not edited)
+Guidelines :
+Please use ONLY HTML, CSS, JS & JQuery
+Please do not use any frameworks like React/Angular/Vue
+Also do not use any CSS frameworks like Bootstrap, MUI
+You are free to use your imagination for the UI designs
+Use all coding best practises -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>To Do List</title>
+</head>
+<body>
+  <header class="header">
+    <h1>To Do App</h1>
+  </header>
+  <form id="inputContainer">
+    <!-- <label for="input-text">Please enter the task</label> -->
+    <input id="input-text" type="text" placeholder="Enter your task" required>
+    <button type="submit">Submit</button>
+  </form>
+  <div class="todo-list">
+    
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
