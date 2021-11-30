@@ -5,7 +5,7 @@ const list = document.querySelector('.todo-list')
 button.addEventListener('click', addTodo);
 list.addEventListener('click',handleDelete)
 list.addEventListener('click',handleCheck)
-// list.addEventListener('click',handleEdit)
+list.addEventListener('click',handleEdit)
 
 let i = 0;
 let listTodos = [];
@@ -61,6 +61,21 @@ function handleCheck(e){
 	if (todoClicked.id === "checkboxBtn") {
     const todo = todoClicked.parentElement;
 		console.log("this is todo", todo)
-    todo.classList.toggle("completed");
+    todo.children[1].classList.toggle("completed");
+		if(todo.children[1].classList[0]==='completed'){
+			todo.children[2].disabled=true;
+			console.log(todo.children[0].disabled)
+		}
+		else{
+			todo.children[2].disabled=false;
+		}
+  }
+}
+
+function handleEdit(e){
+	const todoClicked = e.target;
+	// e.preventDefault();
+	if (todoClicked.classList[0] === "editBtn") {
+    console.log("Edit works")
   }
 }

@@ -40,3 +40,8 @@ button {
   align-items: center;
   justify-content: space-around;
 }
+
+.completed {
+  text-decoration: line-through;
+  color: coral;
+}
